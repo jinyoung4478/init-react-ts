@@ -2,4 +2,4 @@
 
 ## Description
 
-Vite, React, TypeScript, Tailwind CSS.
+Vite, React, TypeScript, Tailwind CSS
