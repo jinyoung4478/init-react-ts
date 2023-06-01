@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Root from '@/Root';
-import Main from '@/pages/Main';
+import Home from '@/pages/Home';
 import About from '@/pages/About';
 import User from '@/pages/users/User';
 import Followers from '@/pages/users/Followers';
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
       children: [
          {
             path: '',
-            element: <Main />,
+            element: <Home />,
             errorElement: <ErrorComponent />,
          },
          {

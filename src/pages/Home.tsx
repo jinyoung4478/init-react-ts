@@ -1,7 +1,7 @@
 import { Link, useSearchParams } from 'react-router-dom';
 import { users } from '@/db';
 
-export default function Main() {
+export default function Home() {
    const [readSearchParms, setSearchParams] = useSearchParams();
 
    return (
