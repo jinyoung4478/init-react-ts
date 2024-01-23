@@ -1,19 +1,13 @@
-import { Link, useSearchParams } from 'react-router-dom';
-import { users } from '@/db';
+import { Link, useSearchParams } from 'react-router-dom'
+import { Sidenav } from '@/components/Sidenav'
 
 export default function Home() {
-   const [readSearchParms, setSearchParams] = useSearchParams();
+  const [readSearchParms, setSearchParams] = useSearchParams()
 
-   return (
-      <div>
-         <h1>Users</h1>
-         <ul>
-            {users.map(user => (
-               <li key={user.id}>
-                  <Link to={`/users/${user.id}`}>{user.name}</Link>
-               </li>
-            ))}
-         </ul>
-      </div>
-   );
+  return (
+    <div>
+      <Sidenav />
+      <h1>Init React</h1>
+    </div>
+  )
 }
