@@ -1,13 +1,11 @@
-import { Link, useSearchParams } from 'react-router-dom'
-import { Sidenav } from '@/components/Sidenav'
+import { Tooltip } from '@/components/Tooltip';
 
 export default function Home() {
-  const [readSearchParms, setSearchParams] = useSearchParams()
-
   return (
     <div>
-      <Sidenav />
-      <h1>Init React</h1>
+      <Tooltip>
+        <div className="absolute -bottom-8 left-0 bg-blue-200">This is tooltip</div>
+      </Tooltip>
     </div>
-  )
+  );
 }
