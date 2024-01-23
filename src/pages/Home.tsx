@@ -4,6 +4,7 @@ import { Link } from '@/components/Link';
 export default function Home() {
   return (
     <div>
+      <h1>TEST</h1>
       <Tooltip>
         <div className="absolute -bottom-8 left-0 bg-blue-200">This is tooltip</div>
       </Tooltip>
